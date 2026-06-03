@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme para Modo Oscuro. -->
+    <style name="Base.Theme.Natura" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales en Modo Oscuro -->
+        <item name="colorPrimary">@color/primary_nature</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimaryContainer">@color/primary_nature_light</item>
+        <item name="colorOnPrimaryContainer">@color/primary_nature</item>
+        <item name="colorSecondary">@color/primary_nature_dark</item>
+
+        <item name="android:windowBackground">@color/nature_bg</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+</resources>

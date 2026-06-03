@@ -1,0 +1,26 @@
+{
+  "name": "plantas_medicinales",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Alfaro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.22.3",
+    "nodemon": "^3.1.14",
+    "sharp": "^0.34.5",
+    "socket.io": "^4.8.3"
+  }
+}

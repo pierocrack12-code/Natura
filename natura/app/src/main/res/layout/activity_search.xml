@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nature_bg"
+    tools:context=".SearchActivity">
+
+    <!-- Header -->
+    <View
+        android:id="@+id/headerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/primary_nature"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBackSearch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="@+id/headerSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerSearch"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscador Natura"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/headerSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerSearch" />
+
+    <!-- Barra de Búsqueda Centrada -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchCardLarge"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/headerSearch">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="@color/primary_nature" />
+
+            <EditText
+                android:id="@+id/etSearchInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Ej: Menta, Eucalipto..."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvSuggestionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="Sugerencias populares"
+        android:textColor="@color/primary_nature"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchCardLarge" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggestionsTitle">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMenta"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menta"
+            app:chipBackgroundColor="@color/primary_nature_light"
+            app:chipIcon="@android:drawable/btn_star" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipManzanilla"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manzanilla"
+            app:chipBackgroundColor="@color/primary_nature_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEucalipto"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eucalipto"
+            app:chipBackgroundColor="@color/primary_nature_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAloe"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aloe Vera"
+            app:chipBackgroundColor="@color/primary_nature_light" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Presiona el botón de buscar en tu teclado para obtener la ficha botánica completa."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupSuggestions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

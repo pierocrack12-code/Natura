@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Natura Neutra y Viva -->
+    <color name="primary_nature">#4CAF50</color> <!-- Verde Neutro Vivo -->
+    <color name="primary_nature_dark">#388E3C</color>
+    <color name="primary_nature_light">#E8F5E9</color>
+
+    <color name="nature_bg">#F8FBF8</color> <!-- Fondo muy suave -->
+    <color name="text_main">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Mantenemos nombres anteriores para evitar errores inmediatos si se usan en otros sitios -->
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_dark_green">#388E3C</color>
+    <color name="nature_cream">#F8FBF8</color>
+    <color name="leaf_light">#E8F5E9</color>
+    <color name="gray_text">#7F8C8D</color>
+    <color name="btn_text_color">#FFFFFF</color>
+</resources>

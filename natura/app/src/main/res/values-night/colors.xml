@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Natura para Modo Oscuro (Agradable y Suave) -->
+    <color name="primary_nature">#81C784</color> <!-- Verde desaturado -->
+    <color name="primary_nature_dark">#A5D6A7</color> <!-- Verde claro para que resalte en negro -->
+    <color name="primary_nature_light">#1B5E20</color>
+
+    <color name="nature_bg">#121212</color> <!-- Fondo principal oscuro -->
+    <color name="text_main">#F5F5F5</color> <!-- Casi blanco para texto principal -->
+    <color name="text_secondary">#BDBDBD</color> <!-- Gris claro para texto secundario -->
+
+    <color name="nature_cream">#252525</color> <!-- Gris carbón más claro para que la barra se vea -->
+    <color name="white">#252525</color>
+
+    <!-- Colores para botones en modo oscuro -->
+    <color name="btn_text_color">#FFFFFF</color>
+</resources>

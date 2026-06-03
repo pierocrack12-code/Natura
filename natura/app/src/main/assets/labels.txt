@@ -1,0 +1,9 @@
+0 manzanilla
+1 menta
+2 ruda
+3 romero
+4 sabila
+5 albaca
+6 eucalipto
+7 cola_caballo
+8 diente_leon
